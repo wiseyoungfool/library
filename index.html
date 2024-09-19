@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="library.js"></script>
+</head>
+<body>
+    <div class="books-list">
+
+    </div>
+    <form class="book-form">
+        <p class="error-message"></p>
+        <input id="book-title" type="text" placeholder="Title" required minlength="3" maxlength="100">
+        <input id="book-author" type="text" placeholder="Author" required minlength="3" maxlength="100">
+        <label for="book-completed">Completed</label>
+        <input id="book-completed" type="checkbox">
+        <button id="submit-book" type="submit">Add Book</button>
+        <button id="cancel-book-form" type="button">Cancel</button>
+    </form>
+    <button class="add-book">Add Book</button>
+</body>
+</html>

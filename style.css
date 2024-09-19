@@ -1,0 +1,34 @@
+* {
+    /* border: 2px solid red; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.books-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.book-card {
+    background-color: lightgray;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.book-form {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    width: 300px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.error-message {
+    color: red;
+}
