@@ -41,10 +41,12 @@ function renderBooks() {
         let readText = "Read";
         if (book.read != true) { readText = "Unread"; }
         bookCard.innerHTML = `
-            <button class="remove-book" onclick="removeBookFromLibrary(${index})">Remove Book</button>
             <p>Title: ${book.title}</p>
             <p>Author: ${book.author}</p>
-            <button class="book-read" onclick="toggleReadByIndex(${index})">${readText}</button>
+            <div class="card-buttons">
+                <button class="book-read" onclick="toggleReadByIndex(${index})">${readText}</button>
+                <button class="remove-book" onclick="removeBookFromLibrary(${index})">Remove Book</button>
+            </div>
         `;
         booksDiv.appendChild(bookCard);
     });
@@ -62,10 +64,10 @@ function toggleBookForm() {
 
     if (form.style.display === "none" || form.style.display === "") {
         form.style.display = "flex";
-        addBook.setAttribute("disabled", "true");
+        //addBook.setAttribute("disabled", "true");
     } else {
         form.style.display = "none";
-        addBook.removeAttribute("disabled");
+        //addBook.removeAttribute("disabled");
     }
 }
 

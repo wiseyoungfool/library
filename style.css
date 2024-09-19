@@ -1,34 +1,82 @@
 * {
     /* border: 2px solid red; */
+    /* color: white; */
 }
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px;
+    background-color: darkgray;
 }
+
+header {
+    background-color: lightgreen;
+    align-items: stretch;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 5px 5px grey;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px;
+}
+
 .books-list {
     display: flex;
     flex-wrap: wrap;
 }
 .book-card {
     background-color: lightgray;
-    width: 300px;
+    max-width: max(300px,20%);
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
+    box-shadow: 0px 5px 5px grey;
+    flex: 1 1 20%;
 }
 
 .book-form {
     display: none;
     flex-direction: column;
     padding: 20px;
-    align-items: center;
+    margin: 20px;
+    align-items: stretch;
     width: 300px;
     background-color: lightblue;
     border-radius: 10px;
 }
 
+.completed-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .error-message {
     color: red;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    border: 2px green;
+    box-shadow: 0px 5px 5px green;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: lightsalmon;
 }
